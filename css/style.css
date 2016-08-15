@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS 初始化 */
+body,div,ul,li,dl,dt,dd,p,h1,h2,h3,h4,span,a,em,i,b,strong,input,textarea,select,option,label{ margin:0; padding:0;}
+li{ list-style:none;}
+input,select,textarea,area{ outline:none;}
+a{ color:#2d0505; text-decoration:none;}
+a:hover{color:#2d0505;}
+img{ border:0 none; vertical-align:top;}
+.clearfix{ *zoom:1;}
+.clearfix:after{ content:"."; display:block; visibility:hidden; clear:both; height:0; font-size:0;}
+body{ font-family:"微软雅黑"; font-size:14px;  background: #e04ede;}
+
+/*黄色块*/
+#header{ width:100%; height:auto; padding-top:426px; background:url(../images/header-bg.jpg) no-repeat center top #f4e033; padding-bottom:229px; }
+.nav{ background:url(../images/nav-bg.jpg) no-repeat;}
+.nav li{ float:left; width:50%; height:70px;}
+.nav a{ display:block; width:100%; height:100%; overflow:hidden; text-indent:-99em;}
+.sidle{ background:#fff; margin-top:20px;}
+.sidle li{ float:left; width:48px; height:428px; overflow:hidden; margin-top:-1px;
+	transition:all 1s;
+	-webkit-transition:all 1s;
+}
+
+/*女鞋上新*/
+.women-new-title{ height: 115px; margin:-229px 0 12px; padding-top: 161px; background: url("../images/women-new-title.jpg") no-repeat;}
+.women-new-title a,.man-new-title a{ display: block; width: 100%; height: 115px; overflow: hidden; text-indent: -99em;}
+.women-new-list,.man-new-list{ width: 1000px; overflow: hidden;}
+.women-new-list li,.man-new-list li{ position: relative; float: left; width: 190px; height: 330px; margin: 10px 10px 0 0; background: #fff;}
+.new-list-img{ position: relative;  height: auto;}
+.new-list-img img{ display: block;  height: 220px;}
+.new-list-img span{ position: absolute; left: 0; bottom: 0; width: 100%; height: 23px; line-height: 23px; text-align: center; color: #664746; overflow: hidden; filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#99FFFFFF', endColorstr='#99FFFFFF');background:rgba(255,255,255,0.6);}
+.new-list-logo{ height: 30px; text-align: center; margin-top: 7px;}
+.new-list-text{ width: 100; height: 34px; line-height: 34px; text-align: center; color: #2d0505; }
+.new-list-coupon{ width: 137px; height: 26px; line-height: 26px; text-align: center; margin: 0 auto; background: #f0196a; color: #fff;}
+.new-list-coupon dt{ float: left; width: 68px;border-right: 1px solid #f34788;}
+.new-list-coupon dd{ float: left; margin-left: 5px;}
+.women-new-mouseover,.man-new-mouseover{ display: none; position: absolute;left: 0; top: 0; width: 100%; height: 330px; filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#66000000', endColorstr='#66000000');background:rgba(0,0,0,0.4); }
+.new-mouseover-product{ position: absolute; z-index: 5; overflow: hidden; text-indent: -99em;}
+.new-mouseover-coupon{ position: absolute; z-index: 6; left: 9px; bottom: 13px;}
+.new-mouseover-coupon .new-list-coupon{ width: 172px; height: 33px; line-height: 33px; font-size: 18px;}
+.women-new-list li:hover .women-new-mouseover,.man-new-list li:hover .man-new-mouseover{ display: block;}
+
+/*男鞋上新*/
+#man-new{ width:100%; height:auto; background: #753ac8;}
+.man-new-title{ width: 990px; height: 115px; margin:0 auto 10px; padding-top: 167px; background: url("../images/man-new-title.jpg")  no-repeat  #753ac8;}
+.man-new-list .new-list-coupon{ background: #1e5fc3;}
+.man-new-list .new-list-coupon dt{ border-right:#4b7fcf;}
+
+/*聚划算*/
+.Bargain{}
+.Bargain h2{ width: 277px; height: 114px; margin: 18px auto 11px; background: url("../images/Bargain-title.png") no-repeat; text-indent: -99em; overflow: hidden;}
+.Bargain-list{ width: 1000px; overflow: hidden;}
+.Bargain-list li{ float: left; width: 324px; height: 242px; margin-right: 9px; background: #fff;}
+
+/*女鞋简介*/
+.women-shoes-type h2,.man-shoes-type h2{ width: 359px; height: 156px; text-indent: -99em; overflow: hidden; margin: 0 auto; background: url("../images/women-shoes-type.jpg") no-repeat;}
+.women-shoes-type h3,.man-shoes-type h3{ width: 186px; height: 33px; padding: 3px 402px; margin: 19px 0 10px; line-height: 33px; text-align: center; color: #fff; font-size: 26px; background: url("../images/women-shoes-type-bg.jpg") no-repeat; }
+.shoes-type{ width: 1000px; overflow: hidden; padding-bottom: 41px;}
+.shoes-type li{ float: left; width: 190px; height: 355px; margin: 10px 10px 0 0; background: #fff;}
+.shoes-type-title{ width: 181px; height: auto; padding-left: 9px; }
+.shoes-type-title a{ display: block; width: 120px; height: 16px; line-height: 16px; padding-top:8px; color: #f0196a; font-size: 16px;}
+.shoes-type-title span{ height:21px; line-height: 21px; color: #999999; font-size: 13px;}
+.shoes-type-img{ width: 190px; height:auto;}
+.shoes-type-img a{ display: block; width: 100%; height: 190px;}
+.shoes-type-img span{display: block; height: 20px; line-height: 20px; padding-left: 9px;}
+.shoes-type-price{ height:auto; padding:0 0 6px 9px;}
+.shoes-type-price dt{ height: 18px; line-height: 18px; font-size: 16px; padding-bottom: 6px;}
+.shoes-type-price dd{ height: 26px;}
+.shoes-type-buy{ width: 169px;height: 36px; margin-left: 9px; background: url("../images/women-shoes-type-3.jpg") no-repeat;}
+.type-buy-coupon{ float: left;width:75px; height: 100%; text-indent: -99em; overflow: hidden; }
+.type-buy-buy{ float: left; width:94px; height: 100%; text-indent: -99em; overflow: hidden;}
+.shoes-type li:hover{ width: 190px; height: 355px; border: 2px solid #e9d83f; margin: 8px 8px -2px -2px;}
+
+/*男鞋简介*/
+.man-shoes-type h2{ background: url("../images/man-shoes-type.jpg") no-repeat; margin-top: 13px;}
+.man-shoes-type h3{ background: url("../images/man-shoes-type-bg.jpg") no-repeat;}
+.man-shoes-type .shoes-type-title a{ color: #1e5fc3;}
+.man-shoes-type .shoes-type-buy{ background: url("../images/man-shoes-type-3.jpg") no-repeat;}
+.man-shoes-type .shoes-type li:hover{width: 190px; height: 355px; margin: 8px 8px -2px -2px; border: 2px solid #1e5fc3;}
+
+/*中国质造*/
+.made-in-china h2{ width:362px; height:112px;background: url("../images/made-in-china.png") no-repeat center top; text-indent: -99em; overflow: hidden; margin: 0 auto;}
+.china-list{ width: 1000px; overflow: hidden; padding-bottom: 35px;}
+.china-list li{ float: left; width: 190px; height: 310px; background: #fff; margin: 10px 10px 0 0;}
+.china-buy{ width: 169px;height: 36px; margin-left: 9px; background: #f0196a;  }
+.china-buy-buy{ display: block;width:169px; height: 36px; line-height: 36px; color: #fff; text-align: center; font-size: 20px;}
+#man-new .china-buy{ background: #1e5fc3;}
+
+/*固定定位*/
+#fixed{ position: fixed; bottom:0;left: 50%;width: 119px; height: auto; margin-left: 517px;}
+#fixed a{ color: #fff;}
+.fixed-women dt,.fixed-man dt{width: 85px; height: 36px; line-height:36px; padding-left: 34px; font-size: 18px;}
+#fixed dd{ width: 115px; height: 26px; margin: 0 2px;}
+#fixed dd a{ display: block; width: 70px; height: 25px; border-bottom: 1px dashed #f0a9ee; margin: 0 auto; text-align: center;}
+.fixed-women dt{ background:url("../images/fixed-women.jpg") no-repeat #ff2266;}
+.fixed-man dt{ background:url("../images/fixed-man.jpg") no-repeat #ff2266;}
+.fixed-bargain dt{ background: #ff2266; width: 115px; margin: 0 auto; height: 36px; line-height:36px; font-size: 18px; text-align: center;}
+.fixed-women dd{ background: #e23bdf;}
+.fixed-man dd{ background: #6e2ccb;}
+#fixed h2{ width: 115px; height: 41px; line-height: 41px; text-align: center; background: #333333; margin: 0 auto; font-weight: 800;}
+
+
+
+/*公共部分*/
+.layer{ width:990px; height:auto; margin:0 auto;}
